@@ -1,0 +1,6 @@
+[ENTIDADES]
+estudiante: Ana
+curso: Paradigmas
+
+[RELACIONES]
+lleva: Ana, Paradigmas

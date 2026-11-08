@@ -1,0 +1,14 @@
+[ENTIDADES]
+estudiante: Laura
+estudiante: Pedro
+curso: Programacion
+docente: Roberto
+
+[RELACIONES]
+lleva: Laura, Programacion
+lleva: Pedro, CursoInexistente
+imparte: Roberto, Programacion
+
+[REGLAS_SOLICITADAS]
+companeros
+curso_con_docente

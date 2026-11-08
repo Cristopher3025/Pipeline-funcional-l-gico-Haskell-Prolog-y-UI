@@ -1,0 +1,4 @@
+REPORTE DE VALIDACION
+=====================
+
+Sin errores ni advertencias.

@@ -1,0 +1,116 @@
+/* Academic Logic — identidad visual universitaria original, inspirada en UNA.
+   No utiliza ni reproduce el logotipo institucional oficial. */
+:root {
+  color-scheme: light;
+  --bg: #f2f4f6;
+  --sidebar: #202b3a;
+  --surface: #ffffff;
+  --surface2: #f8f9fb;
+  --line: #e0e5eb;
+  --muted: #66768a;
+  --text: #202a37;
+  --blue: #263c58;
+  --gold: #b51f32;
+  --una-red: #b51f32;
+}
+
+body {background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif;}
+body::before {display:none;}
+.layout {min-height:100vh;}
+.sidebar {width:256px; background:#202c3d; border:0; padding:28px 19px 20px;}
+.brand-row {gap:12px; margin-bottom:7px;}
+.brand-mark {width:43px; height:43px; flex-shrink:0; border-radius:9px;
+  background:#b51f32; border:0; box-shadow:none; color:white; font-size:15px;
+  font-weight:900; letter-spacing:-.6px;}
+.brand {font-size:17px; letter-spacing:-.5px; color:#f6f8fb;}
+.brand small {color:#b7c4d4; font-size:9px; font-weight:650; letter-spacing:1.15px;}
+.subtitle {color:#93a3b7; margin:3px 0 37px 55px;}
+.nav-label {color:#7f91a7; margin-bottom:13px; letter-spacing:1.4px;}
+.nav a {border-radius:7px; padding:11px 12px; margin:2px 0; color:#bccbda;
+  font-weight:500; border:0; transition:background .18s,color .18s;}
+.nav a:hover,.nav a.active {background:#364355; color:#fff; transform:none; border:0;}
+.nav a.active {box-shadow:inset 3px 0 0 #df4050;}
+.nav a.active::before {display:none;}
+.nav a img.nav-icon {display:block; width:21px; height:21px; object-fit:contain; flex:0 0 21px;
+  filter:grayscale(1) brightness(0) invert(.88); opacity:.88; transition:opacity .18s,filter .18s;}
+.nav a:hover img.nav-icon,.nav a.active img.nav-icon {filter:grayscale(1) brightness(0) invert(1); opacity:1;}
+.sidebar-bottom {background:#293749; border:1px solid #42516a; box-shadow:none; border-radius:9px;}
+.sidebar-bottom strong {font-size:12px; font-weight:700;}
+.sidebar-bottom span {color:#b3c0d0;}
+.main {max-width:1540px; padding:34px clamp(24px,4vw,64px) 28px;}
+.topbar {color:#728092; margin-bottom:24px; font-size:11px;}
+.breadcrumb {letter-spacing:1.1px; font-weight:750;}
+.breadcrumb b {color:#ae2333;}
+.live {background:#edf7f0; border:1px solid #b7d9c1; border-radius:5px;
+  color:#297342; font-size:11px; padding:6px 10px;}
+.live::before {background:#38a363; box-shadow:none; width:6px; height:6px;}
+.hero {background:#fff; border:1px solid #dce2e8; border-top:4px solid #b51f32;
+  box-shadow:none; border-radius:10px; min-height:215px; padding:34px 40px; margin-bottom:31px;}
+.hero::before {display:none;}
+.hero-copy {max-width:660px;}
+.eyebrow {color:#b51f32; letter-spacing:1.45px; font-size:10px; margin-bottom:9px;}
+.eyebrow::before {background:#b51f32; width:17px; height:2px;}
+h1 {color:#1d2939; font-weight:750; font-size:clamp(29px,3.3vw,41px);
+  line-height:1.15; letter-spacing:-1.25px; margin:0 0 12px;}
+.intro {color:#617186; font-size:13px; line-height:1.8; max-width:590px; margin:0 0 13px;}
+.hero-chip {background:#f9ecee; border:1px solid #e9c9ce; color:#a42938;
+  padding:5px 10px; border-radius:4px; font-size:10px; font-weight:750;}
+.hero-art {right:5%; top:50%; transform:translateY(-50%); width:260px; height:112px;
+  border:1px solid #e0e4e8; border-radius:7px; box-shadow:none;
+  background:#f6f8fa; display:flex; gap:9px; align-items:center; justify-content:center;
+  color:#2b3e56; font-family:Consolas,monospace; font-size:13px; font-weight:800;}
+.hero-art span {padding:8px 10px; border:1px solid #d6dfe8; border-radius:4px; background:white;}
+.hero-art i {font-style:normal; color:#b51f32; font-size:25px;}
+.section-caption {margin:0 0 14px;}
+.section-caption h2 {font-size:18px; color:#253246;}
+.section-caption span {font-size:11px;}
+.stats {gap:14px; margin-bottom:29px;}
+.stat-card {background:#fff; border:1px solid #dde3e9; border-radius:8px;
+  box-shadow:none; min-height:170px; padding:19px 20px; transition:border-color .18s,transform .18s;}
+.stat-card::after {display:none;}
+.stat-card:hover {transform:translateY(-2px); box-shadow:none; border-color:#bf9da4;}
+.stat-top {margin-bottom:15px;}
+img.stat-icon {display:block; width:52px; height:52px; object-fit:contain;
+  background:none; border-radius:0;}
+.stat-card:nth-child(n) img.stat-icon {background:transparent; border-radius:0;}
+.panel h2 {display:flex; align-items:center; gap:9px;}
+.panel h2 img.panel-icon {display:block; width:25px; height:25px; flex:0 0 25px; object-fit:contain;}
+.stat-index {font-size:9px; letter-spacing:.2px; font-weight:600; color:#8995a4;}
+.stat-value {color:#1f2c3e; font-size:34px; font-weight:780; letter-spacing:-1px;}
+.stat-label {color:#3e4e62; font-size:12px; font-weight:700; margin-top:4px;}
+.stat-foot {font-size:10px; color:#8a98a8; margin-top:7px;}
+.panel {background:white; border:1px solid #dde3e9; border-radius:9px;
+  box-shadow:none; padding:26px; margin-bottom:22px; scroll-margin-top:20px;}
+.panel-heading {margin-bottom:17px;}
+.panel h2 {color:#243248; font-size:17px; letter-spacing:-.2px;}
+.pill,.tag {border-radius:4px; font-weight:650; background:#eef2f6; color:#435b76;
+  border:1px solid #dbe3ec; font-size:10px; padding:4px 9px;}
+.tag.blue {background:#f9edf0; color:#aa3445; border-color:#eed3d8;}
+.pill.success {background:#e7f4e9; color:#297442; border-color:#b9d7c3;}
+.pill.error {background:#fff0f1; color:#a72b39; border-color:#efc5ca;}
+.table-wrap {border:1px solid #e0e5ea; border-radius:6px;}
+th {background:#f5f7f9; color:#64778e; letter-spacing:.85px; font-size:10px;}
+th,td {border-bottom-color:#e7ebef; padding:13px 18px;}
+td {color:#334357; font-size:12px;}
+td:first-child {font-weight:650;}
+tbody tr:hover {background:#faf2f3;}
+pre {background:#182434; border:1px solid #192d40; border-radius:7px; color:#dce6f3;
+  font-size:12px; box-shadow:none;}
+.report {background:#f6f8fa; border-color:#e0e5e9; color:#36485d;}
+footer {border-color:#d8dfe7; color:#78879a;}
+footer strong {color:#2f4056;}
+.reveal {animation:fadein .4s ease both;}
+@keyframes fadein {from{opacity:0;}to{opacity:1;}}
+@media(max-width:1200px) {.hero-art {opacity:.65; right:3%; width:215px;}}
+@media(max-width:960px) {.hero-art {display:none;} .hero-copy {max-width:100%;}}
+@media(max-width:650px) {
+  .sidebar {width:100%; padding:15px 16px;}
+  .brand-row {margin-bottom:13px;}
+  .hero {padding:24px; min-height:auto;}
+  .main {padding:17px;}
+  .stat-card {min-height:155px; padding:16px;}
+  .stat-index {display:none;}
+  .panel {padding:16px;}
+  .pill {max-width:160px; text-align:right;}
+}
+@media(prefers-reduced-motion:reduce) {* {animation:none!important; transition:none!important;}}

@@ -1,0 +1,20 @@
+[ENTIDADES]
+estudiante: Ana
+estudiante: Luis
+estudiante: Sofia
+curso: Paradigmas
+curso: Bases de Datos
+docente: Maria
+docente: Carlos
+
+[RELACIONES]
+lleva: Ana, Paradigmas
+lleva: Luis, Paradigmas
+lleva: Sofia, Bases de Datos
+imparte: Maria, Paradigmas
+imparte: Carlos, Bases de Datos
+
+[REGLAS_SOLICITADAS]
+companeros
+curso_con_docente
+comparte_docente

@@ -1,0 +1,74 @@
+
+# ============================================================
+# PROYECTO III - PARADIGMAS DE PROGRAMACION
+# CONFIGURACION DOXYGEN
+# Pipeline Funcional-Logico con Haskell, Prolog y UI
+# ============================================================
+
+# INFORMACION GENERAL
+PROJECT_NAME           = "Proyecto III - Paradigmas"
+PROJECT_BRIEF          = "Pipeline Funcional-Logico Haskell + Prolog + UI"
+PROJECT_NUMBER         = "1.0"
+OUTPUT_LANGUAGE        = Spanish
+PROJECT_LOGO           =
+
+# DIRECTORIOS
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+# ARCHIVOS DE ENTRADA
+INPUT                  = docs/ARQUITECTURA.md \
+                         docs/FUNCIONES.md \
+                         haskell/src \
+                         data/output
+
+FILE_PATTERNS          = *.md *.hs *.pl
+RECURSIVE              = YES
+
+# EXTRACCION
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+# DOCUMENTACION MARKDOWN
+MARKDOWN_SUPPORT       = YES
+USE_MDFILE_AS_MAINPAGE = docs/ARQUITECTURA.md
+
+# CODIGO FUENTE
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = NO
+
+# NAVEGACION
+GENERATE_TREEVIEW      = YES
+FULL_SIDEBAR           = YES
+DISABLE_INDEX          = NO
+
+# DOCUMENTACION HTML
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_DYNAMIC_MENUS     = YES
+HTML_DYNAMIC_SECTIONS  = YES
+HTML_COLORSTYLE        = AUTO_LIGHT
+HTML_EXTRA_STYLESHEET  = docs/una-doxygen.css
+HTML_EXTRA_FILES       = web/assets/icons/conocimiento.png \
+                         web/assets/icons/hechos.png \
+                         web/assets/icons/reglas.png
+
+# OTROS FORMATOS
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# DIAGRAMAS
+HAVE_DOT               = NO
+
+# ADVERTENCIAS
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+WARN_AS_ERROR          = NO
+
+# INFORMACION ADICIONAL
+QUIET                  = NO

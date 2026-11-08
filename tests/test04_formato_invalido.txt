@@ -1,0 +1,11 @@
+[ENTIDADES]
+estudiante Ana
+curso: Paradigmas
+docente: Maria
+
+[RELACIONES]
+lleva Ana, Paradigmas
+imparte: Maria, Paradigmas
+
+[REGLAS_SOLICITADAS]
+companeros

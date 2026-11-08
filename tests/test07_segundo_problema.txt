@@ -1,0 +1,25 @@
+[ENTIDADES]
+estudiante: Daniel
+estudiante: Valeria
+estudiante: Camila
+estudiante: Andres
+curso: Programacion
+curso: Matematicas
+curso: Redes
+docente: Roberto
+docente: Patricia
+
+[RELACIONES]
+lleva: Daniel, Programacion
+lleva: Valeria, Programacion
+lleva: Camila, Matematicas
+lleva: Andres, Redes
+lleva: Daniel, Redes
+imparte: Roberto, Programacion
+imparte: Roberto, Redes
+imparte: Patricia, Matematicas
+
+[REGLAS_SOLICITADAS]
+companeros
+curso_con_docente
+comparte_docente

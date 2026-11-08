@@ -1,0 +1,19 @@
+[ENTIDADES]
+estudiante: José O'Connor
+estudiante: María Fernanda
+estudiante: Andrés Núñez
+curso: Programación Avanzada
+curso: Lógica Matemática
+docente: Sofía Rodríguez
+
+[RELACIONES]
+lleva: José O'Connor, Programación Avanzada
+lleva: María Fernanda, Programación Avanzada
+lleva: Andrés Núñez, Lógica Matemática
+imparte: Sofía Rodríguez, Programación Avanzada
+imparte: Sofía Rodríguez, Lógica Matemática
+
+[REGLAS_SOLICITADAS]
+companeros
+curso_con_docente
+comparte_docente
